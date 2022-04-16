@@ -1,0 +1,208 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Le Pepsi™</title>
+        <!--
+            Meta tags
+        -->
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Le Pepsi">
+        <meta property="og:title" content="Le Pepsi">
+        <meta property="og:description" content="Le Pepsi is X_Shadow_#5962's cat, but also a discord bot, an image generator and an API.">
+        <meta property="og:image" content="https://i.ibb.co/zhnZDHf/82386e03ce70b4049feef8e5558fa47e.webp">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:creator" content="@X_Shadow_gc">
+        <meta name="theme-color" content="#7926f0" />
+        <!-- 
+            Material fonts
+         -->
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+        <link rel="preconnect" href="https://cdn.jsdelivr.net/" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&family=Roboto+Slab:wght@300;400;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet" crossorigin>
+        <!-- 
+            Material Design 2 for Bootstrap was made by @djibe (https://djibe.github.io/)
+        -->
+        <link href="https://cdn.jsdelivr.net/gh/djibe/material@4.6.0-rc.2/css/material.min.css" rel="stylesheet" crossorigin>
+        <link href="https://cdn.jsdelivr.net/gh/djibe/material@4.6.0-rc.2/css/material-plugins.min.css" rel="stylesheet" crossorigin>
+
+        <link href="gilroy.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="transition" class="full" style="display: none; text-align: center;">
+            <div class="fullcenter">
+                <p><h1 style="font-size: 300;">😸</h1><br/><br/><br/><br/><br/><br/>
+                <i style="color: white;">Le pepsi is pog.</i></p>
+            </div>
+        </div>
+        <div id="loading" class="fullcenter">
+            <div class="spinner-border text-primary" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <div id="intro" class="intro" style="background-color: black; height: 100%;">
+            <div class="fullcenter">
+                <h1 class="" style="color: white; text-align: center; font-size: 150; top: 50%;">
+                    <span id="intro1">Le pepsi</span>
+                    <br/><br/>
+                    <span id="intro2">is pog.</span>
+                </h1>
+            </div>
+        </div>
+        <div id="mainBody" class="full mainbody" style="display: none;">
+            <div style="width: 100%;">
+                <ul class="nav nav-tabs nav-fill">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="true">about</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="pepsibot-tab" data-toggle="tab" href="#pepsibot" role="tab" aria-controls="pepsibot" aria-selected="false">pepsibot</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="pepsipicbyusername-tab" data-toggle="tab" href="#pepsipicbyusername" role="tab" aria-controls="contact" aria-selected="false">What Pepsi picture are you?</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="devs-tab" data-toggle="tab" href="#devs" role="tab" aria-controls="devs" aria-selected="false">Developers</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+                    </li>
+                </ul>
+                <!--
+                    Tabs content
+                -->
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
+                    <br/>
+                        <div class="centerContent">
+                            <h1 class="">
+                                Le Pepsi™
+                            </h1>
+                            <h4>Welcome to the official website of Le Pepsi™.</h4>
+                            <br/>
+                            <div id="pepsiImage1">
+                                <img src="https://pic.shadowcat.club" height="250" />
+                            </div>
+                            <br/><br/>
+                            <h4>Tools</h4>
+                            <p>I provide tools related to my cat.</p>
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-sm-4">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Generate random pictures</h5>
+                                                <p class="card-text">Get a random picture of Le Pepsi, and <span style="text-decoration: line-through;">waste</span> optimize your time for more pepsi.</p>
+                                                <a href="https://pic.shadowcat.club" target="_blank" class="btn btn-primary">Try now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    &nbsp;
+                                    <div class="col-sm-4">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Discord bot</h5>
+                                                <p class="card-text">Economy system, leveling system, cat commands & exclusive Pepsi pictures.</p>
+                                                <a class="btn btn-primary" onclick="selectPepsiTab();">Learn more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <br/>
+                        We also provide solutions for developers, that want to integrate pepsi <b>everywhere</b>.<br/>
+                        <a class="btn btn-outline-primary" onclick="selectDevsTab();">Learn more</a>
+                        <br/><br/>
+                        <h4>Find what you're looking for</h4>
+                        <p>Use the tabs available at the top to navigate.</p>
+                        <br/><br/>
+                        Thanks to blackkitten that donated the domain
+                        </div>
+                  </div>
+                  <div class="tab-pane fade" id="pepsibot" role="tabpanel" aria-labelledby="pepsibot-tab">
+                    <br/>
+                    <div class="centerContent">
+                        <h4>Say hi to...</h4>
+                        <h1 class="">
+                            Pespi Bot!
+                        </h1>
+                        <img src="https://i.imgur.com/qOTr5DS.png"><br/>
+                        <br/><br/>
+                        <h4>Help the bot grow!</h4>
+                        <p>We need more servers for the bot to grow, and maybe have the verificiation one day!</p>
+                        <a href="https://bot.shadowcat.club" target="_blank" class="btn btn-primary">Invite the bot</a>
+                        <br/><br/>
+                        Do <code>$help</code> to get a list of commands!
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="pepsipicbyusername" role="tabpanel" aria-labelledby="devs-tab">
+                        <br/>
+                        <div class="centerContent">
+                            <h4>What Pepsi picture are you?</h4>
+                            <p>Enter your username and see what Pepsi picture are you based on your username!</p>
+                            <br/>
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-sm-4">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Input your username</h5>
+                                                <p class="card-text">
+                                                    <input id="usernameText" class="form-control" type="text" style="color: white;" value="Username">
+                                                </p>
+                                                <button onClick="generatePicByUsername();" target="_blank" class="btn btn-primary"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                                    <path fill="currentColor" d="M8.5,13.5L11,16.5L14.5,12L19,18H5M21,19V5C21,3.89 20.1,3 19,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19Z" />
+                                                </svg>&nbsp;&nbsp;Get my picture</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br/>
+                            <h5 class="meme" id="usernamepespigenText">THIS IS NOBODY</h5><br/>
+                            <img id="generatedImage" src="https://i.imgur.com/O33TsRn.png" width="300"><br/><br/>
+                            <h5 class="meme">BUT WHEN PEPSI</h5>
+                        </div>
+                  </div>
+                  <div class="tab-pane fade" id="devs" role="tabpanel" aria-labelledby="devs-tab">
+                        <br/>
+                        <div class="centerContent">
+                            We provide an API for devs to be able to put Pepsi everywhere. Discord bots, websites, applications... you can do pretty much whatever you want with this.<br/>
+                            There's only one endpoint currently. The response content is plain text, no parsing needed. It will just return the link to the image. <br/><br/>
+                            <h5>Endpoint: GET <code>https://api.shadowcat.club/pic.php</code>. That's all.</h5>
+                            <br/><br/>
+                            The only thing I ask you guys, is to put a little link to this website, or to pepsibot. That could be cool :)
+                        </div>
+                  </div>
+                  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                    <br/>
+                    <h3 class="centerContent">
+                        Contact me
+                        <p>Send me an email at <b>contact@shadow-baguet.xyz</b></p>
+                        <p>Contact me on Discord <b><a href="https://discord.gg/Rp4ea8mX3k">https://discord.gg/Rp4ea8mX3k</a></b></p>
+                        <p>Follow me on Twitter <b><a href="https://twitter.com/x_shadow_gc">@x_shadow_gc</a></b></p>
+                        <p>Follow me on GitHub <b><a href="https://github.com/shadowdevfr">@shadowdevfr</a></b></p>
+                    </h3>
+                  </div>
+                </div>
+                <div class="centerContent">
+                    <br/><br/>
+                    Made in <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/282/flag-france_1f1eb-1f1f7.png" width="20"> by X_Shadow_#5962 (<img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/282/baguette-bread_1f956.png" width="20"> Shaguette) 
+                    <br/><br/>
+                    <a class="btn btn-outline-warning" href="https://donate.shadow-baguet.xyz" target="_blank">Do you mind a little donation?</a>
+                    <br/><br/>
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery, Bootstrap Bundle (includes Popper) and Material (@djibe) -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin></script>
+        <script src="https://cdn.jsdelivr.net/gh/djibe/material@4.6.0-rc.2/js/material.min.js" crossorigin></script>
+        <!--
+            Website js
+        -->
+        <script src="main.js"></script>
+    </body>
+</html>
