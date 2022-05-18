@@ -1,208 +1,380 @@
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Le Pepsi™</title>
-        <!--
-            Meta tags
-        -->
-        <meta property="og:type" content="website">
-        <meta property="og:site_name" content="Le Pepsi">
-        <meta property="og:title" content="Le Pepsi">
-        <meta property="og:description" content="Le Pepsi is X_Shadow_#5962's cat, but also a discord bot, an image generator and an API.">
-        <meta property="og:image" content="https://i.ibb.co/zhnZDHf/82386e03ce70b4049feef8e5558fa47e.webp">
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:creator" content="@X_Shadow_gc">
-        <meta name="theme-color" content="#7926f0" />
-        <!-- 
-            Material fonts
-         -->
-        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-        <link rel="preconnect" href="https://cdn.jsdelivr.net/" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&family=Roboto+Slab:wght@300;400;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet" crossorigin>
-        <!-- 
-            Material Design 2 for Bootstrap was made by @djibe (https://djibe.github.io/)
-        -->
-        <link href="https://cdn.jsdelivr.net/gh/djibe/material@4.6.0-rc.2/css/material.min.css" rel="stylesheet" crossorigin>
-        <link href="https://cdn.jsdelivr.net/gh/djibe/material@4.6.0-rc.2/css/material-plugins.min.css" rel="stylesheet" crossorigin>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Le Pepsi ✨</title>
+    <meta name="description" content="Simple landind page" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
+    <style>
+      .gradient {
+        background: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+      }
+      .pepsibg {
+        background-image: url("https://i.imgur.com/hihI07Q.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body class="leading-normal tracking-normal text-white pepsibg" style="font-family: 'Source Sans Pro', sans-serif;">
+    <!--Nav-->
+    <nav id="header" class="fixed w-full z-30 top-0 text-white">
+      <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+        <div class="pl-4 flex items-center">
+          <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
+            <svg class="svg-icon" class="h-8 fill-current inline" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M512 341.333333 455.253333 345.173333C418.56 301.653333 315.733333 192 213.333333 192 213.333333 192 129.28 318.293333 211.626667 486.826667 188.16 522.24 173.653333 540.586667 170.666667 582.826667L88.32 595.2 97.28 637.013333 172.373333 625.92 178.346667 656.213333 111.36 696.32 131.413333 734.293333 193.28 696.32C242.346667 800.426667 366.506667 853.333333 512 853.333333 657.493333 853.333333 781.653333 800.426667 830.72 696.32L892.586667 734.293333 912.64 696.32 845.653333 656.213333 851.626667 625.92 926.72 637.013333 935.68 595.2 853.333333 582.826667C850.346667 540.586667 835.84 522.24 812.373333 486.826667 894.72 318.293333 810.666667 192 810.666667 192 708.266667 192 605.44 301.653333 568.746667 345.173333L512 341.333333M384 469.333333C407.466667 469.333333 426.666667 488.533333 426.666667 512 426.666667 535.466667 407.466667 554.666667 384 554.666667 360.533333 554.666667 341.333333 535.466667 341.333333 512 341.333333 488.533333 360.533333 469.333333 384 469.333333M640 469.333333C663.466667 469.333333 682.666667 488.533333 682.666667 512 682.666667 535.466667 663.466667 554.666667 640 554.666667 616.533333 554.666667 597.333333 535.466667 597.333333 512 597.333333 488.533333 616.533333 469.333333 640 469.333333M469.333333 597.333333 554.666667 597.333333 524.8 656.64C533.333333 683.946667 557.226667 704 586.666667 704 622.08 704 650.666667 675.413333 650.666667 640L672 640C672 686.933333 633.6 725.333333 586.666667 725.333333 554.666667 725.333333 526.933333 707.84 512 682.666667L512 682.666667 512 682.666667C497.066667 707.84 469.333333 725.333333 437.333333 725.333333 390.4 725.333333 352 686.933333 352 640L373.333333 640C373.333333 675.413333 401.92 704 437.333333 704 466.773333 704 490.666667 683.946667 499.2 656.64L469.333333 597.333333Z"  /></svg>
+          </a>
+        </div>
+        <div class="block lg:hidden pr-4">
+          <button id="nav-toggle" class="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+            <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+          </button>
+        </div>
+        <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20" id="nav-content">
+          <ul class="list-reset lg:flex justify-end flex-1 items-center">
+            <li class="mr-3">
+              <a class="inline-block py-2 px-4 text-black font-bold no-underline " href="#">Home</a>
+            </li>
+            <li class="mr-3">
+              <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">Old webiste</a>
+            </li>
+            <li class="mr-3">
+              <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">link</a>
+            </li>
+          </ul>
+          <a 
+            id="navAction"
+            class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+            href="https://ko-fi.com/shadowdev"
+            >
+            Donate
+          </a>
+        </div>
+      </div>
+      <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
+    </nav>
+    <!--Hero-->
+    <div class="pt-24">
+      <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+        <!--Left Col-->
+        <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
+          <p class="uppercase tracking-loose w-full">This is not any cat</p>
+          <h1 class="my-4 text-5xl font-bold leading-tight">
+            This is Pepsi.
+          </h1>
+          <p class="leading-normal text-2xl mb-8">
+            A classy french cat.
+          </p>
+          <a href="https://random.pepsi.pics" class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+            Random picture
+          </a>
+        </div>
+        <!--Right Col-->
+        <div class="w-full md:w-3/5 py-6 text-center">
+          <img class="w-full md:w-4/5 z-50" src="https://i.imgur.com/Iaz0kVj.png" />
+        </div>
+      </div>
+    </div>
+    <div class="relative -mt-12 lg:-mt-24">
+      <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g transform="translate(-2.000000, 44.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <path d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496" opacity="0.100000001"></path>
+            <path
+              d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
+              opacity="0.100000001"
+            ></path>
+            <path d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z" id="Path-4" opacity="0.200000003"></path>
+          </g>
+          <g transform="translate(-4.000000, 76.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <path
+              d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008 636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304 C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z"
+            ></path>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <section class="bg-white border-b py-8">
+      <div class="container max-w-5xl mx-auto m-8">
+        <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+          The history of the cat
+        </h1>
+        <div class="w-full mb-4">
+          <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+        </div>
+        <div class="flex flex-wrap">
+          <div class="w-5/6 sm:w-1/2 p-6">
+            <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+              The birth
+            </h3>
+            <p class="text-gray-600 mb-8">
+              Pepsi was born on July 18th, 2014 in the north west of France. He was a really healthy cat in a familly of 10 other kittens.
+            </p>
+          </div>
+        </div>  
+        <div class="flex flex-wrap flex-col-reverse sm:flex-row">
+          <div class="w-full sm:w-1/2 p-6 mt-6">
+            <div class="align-middle">
+              <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+                The Adoption
+              </h3>
+              <p class="text-gray-600 mb-8">
+                In late august, he was adopted by a french family. He now lives his best life in a small house with his family.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-white border-b py-8">
+      <div class="container mx-auto flex flex-wrap pt-4 pb-12">
+        <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+          What do you want to do?
+        </h1>
+        <div class="w-full mb-4">
+          <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+        </div>
+        <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+            <a href="#" class="flex flex-wrap no-underline hover:no-underline">
+              <p class="w-full text-gray-600 text-xs md:text-sm px-6">
+                Public service
+              </p>
+              <div class="w-full font-bold text-xl text-gray-800 px-6">
+                Random picture generator
+              </div>
+              <p class="text-gray-800 text-base px-6 mb-5">
+                Generate a random picture of Pepsi. It can either be a classy one or a cute one.
+              </p>
+            </a>
+          </div>
+          <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
+            <div class="flex items-center justify-start">i
+              <a class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outlne-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out" href="https://random.pepsi.pics">
+                Generate
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+            <a href="#" class="flex flex-wrap no-underline hover:no-underline">
+              <p class="w-full text-gray-600 text-xs md:text-sm px-6">
+                Developers
+              </p>
+              <div class="w-full font-bold text-xl text-gray-800 px-6">
+                Random picture url generator
+              </div>
+              <p class="text-gray-800 text-base px-6 mb-5">
+                Call the api to get a random Pepsi picture.
+              </p>
+            </a>
+          </div>
+          <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
+            <div class="flex items-center justify-center">
+              <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                Go!
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+            <a href="#" class="flex flex-wrap no-underline hover:no-underline">
+              <p class="w-full text-gray-600 text-xs md:text-sm px-6">
+                Discord Bot
+              </p>
+              <div class="w-full font-bold text-xl text-gray-800 px-6">
+                PepsiBot
+              </div>
+              <p class="text-gray-800 text-base px-6 mb-5">
+                A fun leveling system, exclusive pictures and more. Invite this bot now!
+              </p>
+            </a>
+          </div>
+          <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
+            <div class="flex items-center justify-end">
+              <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                Invite
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
+          <g class="wave" fill="#f8fafc">
+            <path
+              d="M1440,84 C1383.555,64.3 1342.555,51.3 1317,45 C1259.5,30.824 1206.707,25.526 1169,22 C1129.711,18.326 1044.426,18.475 980,22 C954.25,23.409 922.25,26.742 884,32 C845.122,37.787 818.455,42.121 804,45 C776.833,50.41 728.136,61.77 713,65 C660.023,76.309 621.544,87.729 584,94 C517.525,105.104 484.525,106.438 429,108 C379.49,106.484 342.823,104.484 319,102 C278.571,97.783 231.737,88.736 205,84 C154.629,75.076 86.296,57.743 0,32 L0,0 L1440,0 L1440,84 Z"
+            ></path>
+          </g>
+          <g transform="translate(1.000000, 15.000000)" fill="#FFFFFF">
+            <g transform="translate(719.500000, 68.500000) rotate(-180.000000) translate(-719.500000, -68.500000) ">
+              <path d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496" opacity="0.100000001"></path>
+              <path
+                d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
+                opacity="0.100000001"
+              ></path>
+              <path d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z" opacity="0.200000003"></path>
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg>
+    <section class="container mx-auto text-center py-6 mb-12">
+      <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
+        Call to Action
+      </h1>
+      <div class="w-full mb-4">
+        <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
+      </div>
+      <h3 class="my-4 text-3xl leading-tight">
+        Main Hero Message to sell yourself!
+      </h3>
+      <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+        Action!
+      </button>
+    </section>
+    <!--Footer-->
+    <footer class="bg-white">
+      <div class="container mx-auto px-8">
+        <div class="w-full flex flex-col md:flex-row py-6">
+          <div class="flex-1 mb-6 text-black">
+            <a class="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
+              pepsi.pics
+            </a>
+          </div>
+          <div class="flex-1">
+            <p class="uppercase text-gray-500 md:mb-6">Links</p>
+            <ul class="list-reset mb-6">
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="https://instagram.com/pepsilechat" target="_blank" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Instagram</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="https://discord.gg/Rp4ea8mX3k" target="_blank" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Discord server</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="mailto:contact@xshadow.me" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex-1">
+            <p class="uppercase text-gray-500 md:mb-6">Other fun projects</p>
+            <ul class="list-reset mb-6">
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="https://pepsi.host" class="no-underline hover:underline text-gray-800 hover:text-pink-500">PepsiNet ISP</a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex-1">
+            <p class="uppercase text-gray-500 md:mb-6">Socials</p>
+            <ul class="list-reset mb-6">
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="https://xshadow.me" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Website</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="https://twitter.com/x_shadow_gc" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Twitter</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <a href="https://xshadow.me" class="text-gray-500">&copy; Copyright 2022 X_Shadow_#5962 - xshadow.me | Template by tailwindtoolbox (MIT)</a>
+    </footer>
+    <!-- jQuery if you need it
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  -->
+    <script>
+      var scrollpos = window.scrollY;
+      var header = document.getElementById("header");
+      var navcontent = document.getElementById("nav-content");
+      var navaction = document.getElementById("navAction");
+      var brandname = document.getElementById("brandname");
+      var toToggle = document.querySelectorAll(".toggleColour");
 
-        <link href="gilroy.css" rel="stylesheet">
-    </head>
-    <body>
-        <div id="transition" class="full" style="display: none; text-align: center;">
-            <div class="fullcenter">
-                <p><h1 style="font-size: 300;">😸</h1><br/><br/><br/><br/><br/><br/>
-                <i style="color: white;">Le pepsi is pog.</i></p>
-            </div>
-        </div>
-        <div id="loading" class="fullcenter">
-            <div class="spinner-border text-primary" role="status">
-              <span class="sr-only">Loading...</span>
-            </div>
-        </div>
-        <div id="intro" class="intro" style="background-color: black; height: 100%;">
-            <div class="fullcenter">
-                <h1 class="" style="color: white; text-align: center; font-size: 150; top: 50%;">
-                    <span id="intro1">Le pepsi</span>
-                    <br/><br/>
-                    <span id="intro2">is pog.</span>
-                </h1>
-            </div>
-        </div>
-        <div id="mainBody" class="full mainbody" style="display: none;">
-            <div style="width: 100%;">
-                <ul class="nav nav-tabs nav-fill">
-                    <li class="nav-item">
-                      <a class="nav-link active" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="true">about</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="pepsibot-tab" data-toggle="tab" href="#pepsibot" role="tab" aria-controls="pepsibot" aria-selected="false">pepsibot</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="pepsipicbyusername-tab" data-toggle="tab" href="#pepsipicbyusername" role="tab" aria-controls="contact" aria-selected="false">What Pepsi picture are you?</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="devs-tab" data-toggle="tab" href="#devs" role="tab" aria-controls="devs" aria-selected="false">Developers</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
-                    </li>
-                </ul>
-                <!--
-                    Tabs content
-                -->
-                <div class="tab-content" id="myTabContent">
-                  <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
-                    <br/>
-                        <div class="centerContent">
-                            <h1 class="">
-                                Le Pepsi™
-                            </h1>
-                            <h4>Welcome to the official website of Le Pepsi™.</h4>
-                            <br/>
-                            <div id="pepsiImage1">
-                                <img src="https://pic.shadowcat.club" height="250" />
-                            </div>
-                            <br/><br/>
-                            <h4>Tools</h4>
-                            <p>I provide tools related to my cat.</p>
-                            <div class="container">
-                                <div class="row justify-content-center">
-                                    <div class="col-sm-4">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Generate random pictures</h5>
-                                                <p class="card-text">Get a random picture of Le Pepsi, and <span style="text-decoration: line-through;">waste</span> optimize your time for more pepsi.</p>
-                                                <a href="https://pic.shadowcat.club" target="_blank" class="btn btn-primary">Try now</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    &nbsp;
-                                    <div class="col-sm-4">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Discord bot</h5>
-                                                <p class="card-text">Economy system, leveling system, cat commands & exclusive Pepsi pictures.</p>
-                                                <a class="btn btn-primary" onclick="selectPepsiTab();">Learn more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        <br/>
-                        We also provide solutions for developers, that want to integrate pepsi <b>everywhere</b>.<br/>
-                        <a class="btn btn-outline-primary" onclick="selectDevsTab();">Learn more</a>
-                        <br/><br/>
-                        <h4>Find what you're looking for</h4>
-                        <p>Use the tabs available at the top to navigate.</p>
-                        <br/><br/>
-                        Thanks to blackkitten that donated the domain
-                        </div>
-                  </div>
-                  <div class="tab-pane fade" id="pepsibot" role="tabpanel" aria-labelledby="pepsibot-tab">
-                    <br/>
-                    <div class="centerContent">
-                        <h4>Say hi to...</h4>
-                        <h1 class="">
-                            Pespi Bot!
-                        </h1>
-                        <img src="https://i.imgur.com/qOTr5DS.png"><br/>
-                        <br/><br/>
-                        <h4>Help the bot grow!</h4>
-                        <p>We need more servers for the bot to grow, and maybe have the verificiation one day!</p>
-                        <a href="https://bot.shadowcat.club" target="_blank" class="btn btn-primary">Invite the bot</a>
-                        <br/><br/>
-                        Do <code>$help</code> to get a list of commands!
-                    </div>
-                  </div>
-                  <div class="tab-pane fade" id="pepsipicbyusername" role="tabpanel" aria-labelledby="devs-tab">
-                        <br/>
-                        <div class="centerContent">
-                            <h4>What Pepsi picture are you?</h4>
-                            <p>Enter your username and see what Pepsi picture are you based on your username!</p>
-                            <br/>
-                            <div class="container">
-                                <div class="row justify-content-center">
-                                    <div class="col-sm-4">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Input your username</h5>
-                                                <p class="card-text">
-                                                    <input id="usernameText" class="form-control" type="text" style="color: white;" value="Username">
-                                                </p>
-                                                <button onClick="generatePicByUsername();" target="_blank" class="btn btn-primary"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                                                    <path fill="currentColor" d="M8.5,13.5L11,16.5L14.5,12L19,18H5M21,19V5C21,3.89 20.1,3 19,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19Z" />
-                                                </svg>&nbsp;&nbsp;Get my picture</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <br/>
-                            <h5 class="meme" id="usernamepespigenText">THIS IS NOBODY</h5><br/>
-                            <img id="generatedImage" src="https://i.imgur.com/O33TsRn.png" width="300"><br/><br/>
-                            <h5 class="meme">BUT WHEN PEPSI</h5>
-                        </div>
-                  </div>
-                  <div class="tab-pane fade" id="devs" role="tabpanel" aria-labelledby="devs-tab">
-                        <br/>
-                        <div class="centerContent">
-                            We provide an API for devs to be able to put Pepsi everywhere. Discord bots, websites, applications... you can do pretty much whatever you want with this.<br/>
-                            There's only one endpoint currently. The response content is plain text, no parsing needed. It will just return the link to the image. <br/><br/>
-                            <h5>Endpoint: GET <code>https://api.shadowcat.club/pic.php</code>. That's all.</h5>
-                            <br/><br/>
-                            The only thing I ask you guys, is to put a little link to this website, or to pepsibot. That could be cool :)
-                        </div>
-                  </div>
-                  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                    <br/>
-                    <h3 class="centerContent">
-                        Contact me
-                        <p>Send me an email at <b>contact@shadow-baguet.xyz</b></p>
-                        <p>Contact me on Discord <b><a href="https://discord.gg/Rp4ea8mX3k">https://discord.gg/Rp4ea8mX3k</a></b></p>
-                        <p>Follow me on Twitter <b><a href="https://twitter.com/x_shadow_gc">@x_shadow_gc</a></b></p>
-                        <p>Follow me on GitHub <b><a href="https://github.com/shadowdevfr">@shadowdevfr</a></b></p>
-                    </h3>
-                  </div>
-                </div>
-                <div class="centerContent">
-                    <br/><br/>
-                    Made in <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/282/flag-france_1f1eb-1f1f7.png" width="20"> by X_Shadow_#5962 (<img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/282/baguette-bread_1f956.png" width="20"> Shaguette) 
-                    <br/><br/>
-                    <a class="btn btn-outline-warning" href="https://donate.shadow-baguet.xyz" target="_blank">Do you mind a little donation?</a>
-                    <br/><br/>
-                </div>
-            </div>
-        </div>
+      document.addEventListener("scroll", function () {
+        /*Apply classes for slide in bar*/
+        scrollpos = window.scrollY;
 
-        <!-- jQuery, Bootstrap Bundle (includes Popper) and Material (@djibe) -->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin></script>
-        <script src="https://cdn.jsdelivr.net/gh/djibe/material@4.6.0-rc.2/js/material.min.js" crossorigin></script>
-        <!--
-            Website js
-        -->
-        <script src="main.js"></script>
-    </body>
+        if (scrollpos > 10) {
+          header.classList.add("bg-white");
+          navaction.classList.remove("bg-white");
+          navaction.classList.add("gradient");
+          navaction.classList.remove("text-gray-800");
+          navaction.classList.add("text-white");
+          //Use to switch toggleColour colours
+          for (var i = 0; i < toToggle.length; i++) {
+            toToggle[i].classList.add("text-gray-800");
+            toToggle[i].classList.remove("text-white");
+          }
+          header.classList.add("shadow");
+          navcontent.classList.remove("bg-gray-100");
+          navcontent.classList.add("bg-white");
+        } else {
+          header.classList.remove("bg-white");
+          navaction.classList.remove("gradient");
+          navaction.classList.add("bg-white");
+          navaction.classList.remove("text-white");
+          navaction.classList.add("text-gray-800");
+          //Use to switch toggleColour colours
+          for (var i = 0; i < toToggle.length; i++) {
+            toToggle[i].classList.add("text-white");
+            toToggle[i].classList.remove("text-gray-800");
+          }
+
+          header.classList.remove("shadow");
+          navcontent.classList.remove("bg-white");
+          navcontent.classList.add("bg-gray-100");
+        }
+      });
+    </script>
+    <script>
+      /*Toggle dropdown list*/
+      /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
+
+      var navMenuDiv = document.getElementById("nav-content");
+      var navMenu = document.getElementById("nav-toggle");
+
+      document.onclick = check;
+      function check(e) {
+        var target = (e && e.target) || (event && event.srcElement);
+
+        //Nav Menu
+        if (!checkParent(target, navMenuDiv)) {
+          // click NOT on the menu
+          if (checkParent(target, navMenu)) {
+            // click on the link
+            if (navMenuDiv.classList.contains("hidden")) {
+              navMenuDiv.classList.remove("hidden");
+            } else {
+              navMenuDiv.classList.add("hidden");
+            }
+          } else {
+            // click both outside link and outside menu, hide menu
+            navMenuDiv.classList.add("hidden");
+          }
+        }
+      }
+      function checkParent(t, elm) {
+        while (t.parentNode) {
+          if (t == elm) {
+            return true;
+          }
+          t = t.parentNode;
+        }
+        return false;
+      }
+    </script>
+  </body>
 </html>
